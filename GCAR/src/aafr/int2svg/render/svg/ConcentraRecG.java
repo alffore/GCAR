@@ -193,7 +193,7 @@ public class ConcentraRecG extends DibSVGG {
         int xant=xa;
         int yant=ya;
 
-        fbwp.write("M " + xa + "," + ya);
+        fbwp.write("M " + xa + "," + ya+" C");
 
         i++;
 
@@ -203,7 +203,7 @@ public class ConcentraRecG extends DibSVGG {
             ya = pola.ypoints[i];
 
             if(xa!=xant || ya!=yant){
-                fbwp.write(" L" + xa + "," + ya);
+                fbwp.write(" " + xa + "," + ya);
                 xant=xa;
                 yant=ya;
             }
@@ -218,7 +218,7 @@ public class ConcentraRecG extends DibSVGG {
 
         }
 
-        fbwp.write(" z \"/>\n");
+        fbwp.write(" z\"/>\n");
 
     }
     
