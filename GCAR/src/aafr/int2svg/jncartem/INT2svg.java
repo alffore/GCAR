@@ -77,14 +77,14 @@ public class INT2svg {
         LectorINTA linta = new LectorINTA(midxml);
 
         // ordena poligonos del mayor al menor
-        OrdenaPoligonosA(midxml.aPA);
+        ordenaPoligonosA(midxml.aPA);
 
         midxml.aesp = true;
 
         if (midxml.alcance_tipo == Const.CAPAS2 || midxml.alcance_tipo == Const.CAPAPOLI) {
 
             new LectorINTA(midxml, midxml.sdirFuente2, midxml.aPA2);
-            OrdenaPoligonosA(midxml.aPA2);
+            ordenaPoligonosA(midxml.aPA2);
 
         }
 
@@ -137,7 +137,7 @@ public class INT2svg {
      *
      * @param aPA
      */
-    private void OrdenaPoligonosA(ArrayList<PoligonoA> aPA) {
+    private void ordenaPoligonosA(ArrayList<PoligonoA> aPA) {
         if (Const.BDEP) {
             System.out.println("Ordena poligonos Arbitrarios: " + aPA.size());
         }

@@ -74,7 +74,7 @@ public class LectorINT {
 
     /**
      *
-     * Metodo basico para parseo de cadenas
+     * Metodo básico para parseo de cadenas
      * @param spar
      * @param linea
      * @return
