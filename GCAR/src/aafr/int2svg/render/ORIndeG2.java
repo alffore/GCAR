@@ -206,7 +206,7 @@ public class ORIndeG2 {
 
         bpvg = true;
 
-        //se calculan los paramentros de la transformación
+        //se calculan los parametros de la transformación
         int dimmx = xmax - xmin;
         int dimmy = ymax - ymin;
 
